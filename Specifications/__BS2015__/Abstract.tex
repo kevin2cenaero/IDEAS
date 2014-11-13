@@ -1,0 +1,53 @@
+\documentclass[10pt,a4paper,twocolumn]{article}
+
+\usepackage{geometry}
+\geometry{left=20mm, right=20mm, top=20mm, bottom=20mm, noheadfoot}
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+\usepackage{authblk}
+
+\begin{document}
+
+\title{-- OpenIDEAS -- \\ An Open Framework for Integrated District Energy Simulations}
+
+\author[1,3]{R. Baetens\thanks{ruben.baetens@bwk.kuleuven.be}}
+\author[2,4]{R. De Coninck}
+\author[2,3]{F. Jorissen}
+\author[2,3]{D. Picard}
+\author[2,3]{L. Helsen}
+\author[1,3]{D. Saelens}
+
+\affil[1]{\normalsize{\, Building Physics Section, Department of Civil Engineering}}
+\affil[2]{\, Applied Mechanics and Energy Conversion Section, Department of Mechanical Engineering}
+\affil[1,2]{\, KU Leuven - Leuven University, BE-3000 Leuven Belgium}
+\affil[3]{\, EnergyVille, BE-3600 Genk, Belgium}
+\affil[4]{\, 3E, BE-1000 Brussels, Belgium}
+
+\renewcommand\Authands{ and }
+
+\date{}
+\maketitle\thispagestyle{empty}
+
+\abstract{
+
+  While recent developments in building energy research emphasize on net-zero energy building optimization and their integration in a larger energy system, a vast set of research questions become increasingly multi-domain and multi-scale. With this increasing complexity, the need for more elaborated building energy simulation tools rises.
+  This paper presents and discusses the development of the \texttt{OpenIDEAS} framework, an open framework developed for integrated district energy simulations consisting of \texttt{IDEAS}, \texttt{StROBe}, \texttt{FastBuildings} and \texttt{GreyBox}, allowing rapid prototyping for design and operation of district energy and control systems. We will discuss the main requirements for such framework, and outline the implemented software design principles, the library architecture and the testing currently being conducted.
+
+  The \texttt{IDEAS} library (short for Integrated District Energy Assessment by Simulation) is implemented in the equation-based object-oriented modelling language Modelica and allows simultaneous transient simulation of thermal and electrical systems at building and feeder level. The library allows rapid prototyping of heating, ventilation and air-conditioning systems, multi-zone heat transfer and electrical systems in and between buildings in a neighbourhood context. Its implementation is complementary to and compatible with the LBNL Modelica Buildings library. Both libraries are developed using the same base classes as implemented in the IEA EBC Annex 60 Modelica library. These base classes define basic models for physical phenomena such as conservation equations and flow resistances.
+
+  In addition, the \texttt{StROBe} package (short for Stochastic Residential Occupancy Behaviour) is implemented in the general-purpose object-oriented programming language Python and provides boundary conditions for \texttt{IDEAS}. The package allows stochastic modelling of time series for occupancy, receptacle loads, internal heat gains, space heating set point temperatures and hot water redraws at a 1-minute time resolution for residential cases. For the use of \texttt{StROBe} at the neighbourhood level in \texttt{IDEAS}, special attention in the development goes to the auto- and cross-correlation of the different variables and dwelling units.
+
+  The Modelica library \texttt{FastBuildings} implements low-order building models which are compatible with \texttt{IDEAS}.  The python toolbox \texttt{GreyBox} implements a semi-automated parameter estimation to obtain grey-box models which serve as controller model in a model predictive controller (MPC) framework for \texttt{IDEAS}.
+
+  Altogether, \texttt{OpenIDEAS} forms an open framework allowing is to model, simulate and analyse integrated energy solutions at the building and district scale to answer the new research questions rising in the building energy problemacy.
+
+}
+
+\emph{Keywords: District energy; Building energy; Simulation framework; Modelica; Open source.}\\
+
+\end{enumerate}
+
+
+\end{document}
