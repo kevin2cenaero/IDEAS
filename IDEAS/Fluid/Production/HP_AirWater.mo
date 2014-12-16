@@ -43,26 +43,18 @@ equation
       color={191,0,0},
       smooth=Smooth.None));
   annotation (
-    Diagram(coordinateSystem(preserveAspectRatio=false, extent={{-100,-100},{100,
-            120}}),
+    Diagram(coordinateSystem(preserveAspectRatio=false, extent={{-100,-100},{
+            100,100}}),
             graphics),
     Icon(coordinateSystem(preserveAspectRatio=false, extent={{-100,-100},{100,
-            120}}),
+            100}}),
          graphics={
         Line(
-          points={{-102,30},{-102,10}},
+          points={{78,50},{78,30}},
           color={0,0,127},
           smooth=Smooth.None),
         Line(
-          points={{-102,-30},{-102,-50}},
-          color={85,85,255},
-          smooth=Smooth.None),
-        Line(
-          points={{78,50},{78,30}},
-          color={128,0,255},
-          smooth=Smooth.None),
-        Line(
-          points={{96,40},{80,40}},
+          points={{98,40},{82,40}},
           color={0,0,127},
           smooth=Smooth.None),
         Line(
@@ -71,24 +63,12 @@ equation
           smooth=Smooth.None),
         Line(
           points={{78,-30},{78,-50}},
-          color={128,0,255},
-          smooth=Smooth.None),
-        Ellipse(extent={{-82,50},{-22,-10}}, lineColor={100,100,100}),
-        Line(
-          points={{-102,20},{-70,20},{-42,32},{-62,8},{-34,20},{-22,20}},
           color={0,0,127},
           smooth=Smooth.None),
+        Ellipse(extent={{-82,50},{-22,-10}}, lineColor={100,100,100}),
         Ellipse(extent={{-2,-10},{58,-70}}, lineColor={100,100,100}),
         Line(
           points={{-2,-40},{10,-40},{38,-28},{18,-52},{46,-40},{78,-40}},
-          color={0,0,255},
-          smooth=Smooth.None),
-        Line(
-          points={{-106,30},{-106,10}},
-          color={0,0,127},
-          smooth=Smooth.None),
-        Line(
-          points={{-106,-30},{-106,-50}},
           color={0,0,127},
           smooth=Smooth.None),
         Line(
@@ -96,16 +76,12 @@ equation
           color={0,0,127},
           smooth=Smooth.None),
         Line(
-          points={{80,50},{80,30}},
-          color={0,0,127},
-          smooth=Smooth.None),
-        Line(
-          points={{-22,20},{-12,20},{-32,-40},{-102,-40}},
+          points={{82,50},{82,30}},
           color={0,0,127},
           smooth=Smooth.None),
         Line(
           points={{-2,-40},{-12,-40},{16,40},{78,40}},
-          color={0,0,255},
+          color={0,0,127},
           smooth=Smooth.None),
         Line(
           points={{-22,-72},{-22,-88},{-2,-72},{-2,-88},{-22,-72}},
@@ -140,70 +116,70 @@ equation
           fillColor={95,95,95},
           fillPattern=FillPattern.Solid),
         Rectangle(
-          extent={{-126,-60},{-186,120}},
+          extent={{-100,-60},{-160,120}},
           lineColor={95,95,95},
           fillColor={255,255,255},
           fillPattern=FillPattern.Solid),
         Rectangle(
-          extent={{-216,100},{-186,20}},
+          extent={{-190,100},{-160,20}},
           lineColor={95,95,95},
           fillColor={255,255,255},
           fillPattern=FillPattern.Solid),
         Line(
-          points={{-176,-20},{-134,-42}},
+          points={{-150,-20},{-108,-42}},
           color={95,95,95},
           smooth=Smooth.None),
         Ellipse(
-          extent={{-152,-34},{-140,-46}},
+          extent={{-126,-34},{-114,-46}},
           lineColor={95,95,95},
           fillPattern=FillPattern.Solid,
           fillColor={255,255,255}),
         Line(
-          points={{-106,-40},{-146,-40}},
-          color={0,0,127},
-          smooth=Smooth.None),
-        Line(
-          points={{-176,0},{-134,-22}},
+          points={{-150,0},{-108,-22}},
           color={95,95,95},
           smooth=Smooth.None),
         Line(
-          points={{-176,20},{-134,-2}},
+          points={{-150,20},{-108,-2}},
           color={95,95,95},
           smooth=Smooth.None),
         Line(
-          points={{-176,40},{-134,18}},
+          points={{-150,40},{-108,18}},
           color={95,95,95},
           smooth=Smooth.None),
         Ellipse(
-          extent={{-152,26},{-140,14}},
+          extent={{-126,26},{-114,14}},
           lineColor={95,95,95},
           fillPattern=FillPattern.Solid,
           fillColor={255,255,255}),
         Line(
-          points={{-106,20},{-146,20}},
+          points={{-152,62},{-110,40}},
+          color={95,95,95},
+          smooth=Smooth.None),
+        Line(
+          points={{-152,80},{-110,58}},
+          color={95,95,95},
+          smooth=Smooth.None),
+        Line(
+          points={{-152,102},{-110,80}},
+          color={95,95,95},
+          smooth=Smooth.None),
+        Line(
+          points={{-190,60},{-184,60},{-180,64},{-180,90},{-178,94},{-170,94},{
+              -168,90},{-168,82}},
+          color={95,95,95},
+          smooth=Smooth.None),
+        Line(
+          points={{-190,60},{-184,60},{-180,56},{-180,30},{-178,26},{-170,26},{
+              -168,30},{-168,38}},
+          color={95,95,95},
+          smooth=Smooth.None),
+        Line(
+          points={{-22,20},{-12,20},{-32,-40},{-120,-40}},
           color={0,0,127},
           smooth=Smooth.None),
         Line(
-          points={{-178,62},{-136,40}},
-          color={95,95,95},
-          smooth=Smooth.None),
-        Line(
-          points={{-178,80},{-136,58}},
-          color={95,95,95},
-          smooth=Smooth.None),
-        Line(
-          points={{-178,102},{-136,80}},
-          color={95,95,95},
-          smooth=Smooth.None),
-        Line(
-          points={{-216,60},{-210,60},{-206,64},{-206,90},{-204,94},{-196,94},{
-              -194,90},{-194,82}},
-          color={95,95,95},
-          smooth=Smooth.None),
-        Line(
-          points={{-216,60},{-210,60},{-206,56},{-206,30},{-204,26},{-196,26},{
-              -194,30},{-194,38}},
-          color={95,95,95},
+          points={{-120,20},{-70,20},{-42,32},{-62,8},{-34,20},{-22,20}},
+          color={0,0,127},
           smooth=Smooth.None)}),
     Documentation(info="<html>
 <p><h4><font color=\"#008000\">Description </font></h4></p>

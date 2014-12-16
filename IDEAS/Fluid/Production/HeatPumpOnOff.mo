@@ -26,25 +26,7 @@ equation
       smooth=Smooth.None));
 
   annotation (Diagram(coordinateSystem(preserveAspectRatio=false, extent={{-100,
-            -100},{100,100}}), graphics), Icon(graphics={
-        Rectangle(extent={{-60,60},{60,-60}}, lineColor={0,0,255}),
-        Line(
-          points={{-100,40},{-20,40},{-40,20},{-20,0},{-40,-20},{-20,-40},{-100,
-              -40}},
-          color={0,0,255},
-          smooth=Smooth.None),
-        Line(
-          points={{100,40},{20,40},{40,20},{20,0},{40,-20},{20,-40},{100,-40}},
-          color={0,0,255},
-          smooth=Smooth.None),
-        Line(
-          points={{-20,20},{20,20}},
-          color={255,0,0},
-          smooth=Smooth.None),
-        Line(
-          points={{10,30},{20,20},{10,10}},
-          color={255,0,0},
-          smooth=Smooth.None)}),
+            -100},{100,100}}), graphics), Icon(graphics),
     Documentation(revisions="<html>
 <ul>
 <li>November 2014 by Filip Jorissen:<br/> 
