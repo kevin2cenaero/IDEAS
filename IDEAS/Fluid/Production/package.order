@@ -1,6 +1,7 @@
 IdealHeater
 Boiler
 HP_AirWater
+HP_Tset_AirWater
 HeatPumpOnOff
 HeatPumpTset
 BaseClasses
